@@ -23,24 +23,33 @@ def calculate_moneyline_payout(moneyline, bet):
         return payout_per_dollar*bet
 
 def spread_result(team1, team1_score, team2, team2_score, team1_spread, team2_spread):
+    if team1_score-team2_score==team1_spread or team1_score-team2_score==team2_spread:
+        try:
+            spread_teams_dict[team1][2] += 1
+        except KeyError:
+            spread_teams_dict[team1] = [0, 0, 1]
+        try:
+            spread_teams_dict[team2][2] += 1
+        except KeyError:
+            spread_teams_dict[team2] = [0, 0, 1]
     if team1_spread<0 and team1_score-team2_score>team1_spread:
         try:
             spread_teams_dict[team1][1] += 1
         except KeyError:
-            spread_teams_dict[team1] = [0, 1]
+            spread_teams_dict[team1] = [0, 1, 0]
         try:
             spread_teams_dict[team2][0] += 1
         except KeyError:
-            spread_teams_dict[team2] = [1, 0]
+            spread_teams_dict[team2] = [1, 0, 0]
     else:
         try:
             spread_teams_dict[team2][1] += 1
         except KeyError:
-            spread_teams_dict[team2] = [0, 1]
+            spread_teams_dict[team2] = [0, 1, 0]
         try:
             spread_teams_dict[team1][0] += 1
         except KeyError:
-            spread_teams_dict[team1] = [1, 0]
+            spread_teams_dict[team1] = [1, 0, 0]
 
 
 if __name__ == "__main__":
@@ -77,10 +86,5 @@ if __name__ == "__main__":
     for team in teams_dict:
         teams_dict[team] = round(teams_dict[team], 2)
         print str(team) + ': ' + str(teams_dict[team])
-        print str(team) + ': ' + str(spread_teams_dict[team][0]) + '-' + str(spread_teams_dict[team][1])
-    # for foo in teams_dict:
-    #     teams_dict[foo] = round(teams_dict[foo], 2)
-    #     print str(foo) + ': ' + str(teams_dict[foo])
-        # payout_away = calculate_payout(game[1], 100)
-        # payout_home = calculate_payout(game[3], 100)
+        print str(team) + ': ' + str(spread_teams_dict[team][0]) + '-' + str(spread_teams_dict[team][1]) + '-' + str(spread_teams_dict[team][2])
 

@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34aedddd-b782-4a11-a347-ea8ce653c248" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nfl_money_lines/nfl_money_lines.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/nfl_money_lines/nfl_money_lines.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nfl_money_lines/nfl_money_lines_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/nfl_money_lines/nfl_money_lines_calc.py" afterDir="false" />
     </list>
@@ -14,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/nfl$nfl_money_lines_calc.coverage" NAME="nfl_money_lines_calc Coverage Results" MODIFIED="1547251268438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nfl_money_lines" />
+    <SUITE FILE_PATH="coverage/nfl$nfl_money_lines_calc.coverage" NAME="nfl_money_lines_calc Coverage Results" MODIFIED="1547251870135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nfl_money_lines" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1840577386">
@@ -40,12 +38,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="141" />
-          <entry key="py" value="1955" />
+          <entry key="py" value="2013" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2096" />
+          <entry key="Python" value="2154" />
         </counts>
       </usages-collector>
     </session>
@@ -55,12 +53,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nfl_money_lines/nfl_money_lines_calc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="76" column="27" lean-forward="true" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+            <state relative-caret-position="323">
+              <caret line="88" column="144" selection-start-line="88" selection-start-column="144" selection-end-line="88" selection-end-column="144" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-                <marker date="1547251266711" expanded="true" signature="345:350" ph="..." />
-                <marker date="1547251266711" expanded="true" signature="717:1310" ph="..." />
+                <marker date="1547251867823" expanded="true" signature="345:350" ph="..." />
+                <marker date="1547251867823" expanded="true" signature="717:1673" ph="..." />
               </folding>
             </state>
           </provider>
@@ -231,12 +229,12 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/nfl_money_lines/nfl_money_lines_calc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="76" column="27" lean-forward="true" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+        <state relative-caret-position="323">
+          <caret line="88" column="144" selection-start-line="88" selection-start-column="144" selection-end-line="88" selection-end-column="144" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1547251266711" expanded="true" signature="345:350" ph="..." />
-            <marker date="1547251266711" expanded="true" signature="717:1310" ph="..." />
+            <marker date="1547251867823" expanded="true" signature="345:350" ph="..." />
+            <marker date="1547251867823" expanded="true" signature="717:1673" ph="..." />
           </folding>
         </state>
       </provider>
