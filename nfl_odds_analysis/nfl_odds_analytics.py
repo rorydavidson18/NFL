@@ -11,7 +11,7 @@ number_columns = sheet.ncols
 f = open('results.txt', 'wr')
 games_list = []
 teams_dict = {}
-spread_teams_dict = {}
+spread_teams_dict = {}  #the values are lists within a list, home record, away record, as favorite record, as underdog
 
 
 def calculate_moneyline_payout(moneyline, bet):
@@ -26,35 +26,44 @@ def calculate_moneyline_payout(moneyline, bet):
 
 
 def spread_result(team1, team1_score, team2, team2_score, team1_spread, team2_spread):
+    team1_is_favorite = False
+    try:
+        spread_teams_dict[team1]
+    except KeyError:
+        spread_teams_dict[team1] = [[0, 0, 0], [0, 0, 0], [0, 0 ,0], [0, 0, 0]]
+    try:
+        spread_teams_dict[team2]
+    except KeyError:
+        spread_teams_dict[team2] = [[0, 0, 0], [0, 0, 0], [0, 0 ,0], [0, 0, 0]]
+    if team1_spread<0:
+        team1_is_favorite = True
     if team1_score-team2_score==team1_spread or team1_score-team2_score==team2_spread:
-        try:
-            spread_teams_dict[team1][2] += 1
-        except KeyError:
-            # exc_type, exc_obj, exc_tb = sys.exc_info()
-            # print(exc_type, exc_tb.tb_lineno)
-            spread_teams_dict[team1] = [0, 0, 1, 0, 0, 0]
-        try:
-            spread_teams_dict[team2][5] += 1
-        except KeyError:
-            spread_teams_dict[team2] = [0, 0, 0, 0, 0, 1]
+        spread_teams_dict[team1][0][2] += 1
+        spread_teams_dict[team2][1][2] += 1
+        if team1_is_favorite:
+            spread_teams_dict[team1][2][2] += 1
+            spread_teams_dict[team2][3][2] += 1
+        else:
+            spread_teams_dict[team2][2][2] += 1
+            spread_teams_dict[team1][3][2] += 1
     elif (team1_spread<0 and team1_score-team2_score<((-1.0)*team1_spread)) or (team2_spread<0 and team1_score-team2_score<team2_spread):
-        try:
-            spread_teams_dict[team1][1] += 1
-        except KeyError:
-            spread_teams_dict[team1] = [0, 1, 0, 0, 0, 0]
-        try:
-            spread_teams_dict[team2][3] += 1
-        except KeyError:
-            spread_teams_dict[team2] = [0, 0, 0, 1, 0, 0]
+        spread_teams_dict[team1][0][1] += 1
+        spread_teams_dict[team2][1][0] += 1
+        if team1_is_favorite:
+            spread_teams_dict[team1][2][1] += 1
+            spread_teams_dict[team2][3][0] += 1
+        else:
+            spread_teams_dict[team1][3][1] += 1
+            spread_teams_dict[team2][2][0] += 1
     else:
-        try:
-            spread_teams_dict[team2][4] += 1
-        except KeyError:
-            spread_teams_dict[team2] = [0, 0, 0, 0, 1, 0]
-        try:
-            spread_teams_dict[team1][0] += 1
-        except KeyError:
-            spread_teams_dict[team1] = [1, 0, 0, 0, 0, 0]
+        spread_teams_dict[team2][1][1] += 1
+        spread_teams_dict[team1][0][0] += 1
+        if team1_is_favorite:
+            spread_teams_dict[team1][2][0] += 1
+            spread_teams_dict[team2][3][1] += 1
+        else:
+            spread_teams_dict[team1][3][0] += 1
+            spread_teams_dict[team2][2][1] += 1
 
 
 def calc_team_odds_and_ats():
@@ -96,6 +105,8 @@ if __name__ == "__main__":
     for team in teams_dict:
         teams_dict[team] = round(teams_dict[team], 2)
         f.write(str(team) + ':\n' + 'Moneyline: ' + str(teams_dict[team]) + '\n' + 'ATS:\n' +
-                '\tHome: ' + str(spread_teams_dict[team][0]) + '-' + str(spread_teams_dict[team][1]) + '-' + str(spread_teams_dict[team][2]) +
-                '\tAway: ' + str(spread_teams_dict[team][3]) + '-' + str(spread_teams_dict[team][4]) + '-' + str(spread_teams_dict[team][5]) +'\n\n')
+                '\tHome: ' + str(spread_teams_dict[team][0][0]) + '-' + str(spread_teams_dict[team][0][1]) + '-' + str(spread_teams_dict[team][0][2]) +
+                '\tAway: ' + str(spread_teams_dict[team][1][0]) + '-' + str(spread_teams_dict[team][1][1]) + '-' + str(spread_teams_dict[team][1][2]) +
+                '\n\tAs Favorite: ' + str(spread_teams_dict[team][2][0]) + '-' + str(spread_teams_dict[team][2][1]) + '-' + str(spread_teams_dict[team][2][2]) +
+                '\tAs Underdog: ' + str(spread_teams_dict[team][3][0]) + '-' + str(spread_teams_dict[team][3][1]) + '-' + str(spread_teams_dict[team][3][2]) + '\n\n')
 
