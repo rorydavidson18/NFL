@@ -1,64 +1,160 @@
-San Francisco: -714.33
-San Francisco: 5-11-0
-Green Bay: -669.91
-Green Bay: 7-8-1
-Jacksonville: -600.58
-Jacksonville: 5-8-3
-NY_Jets: -553.02
-NY_Jets: 5-10-1
-Cincinnati: -503.13
-Cincinnati: 9-7-0
-Arizona: -476.0
-Arizona: 7-8-1
-Atlanta: -472.72
-Atlanta: 5-11-0
-Oakland: -431.37
-Oakland: 6-10-0
-NY_Giants: -427.67
-NY_Giants: 8-7-1
-Denver: -317.48
-Denver: 6-8-2
-Tampa Bay: -289.01
-Tampa Bay: 7-7-2
-Minnesota: -256.14
-Minnesota: 8-7-1
-Carolina: -81.41
-Carolina: 7-8-1
-New England: -76.37
-New England: 10-8-0
-Detroit: -49.67
-Detroit: 9-7-0
-Cleveland: -41.46
-Cleveland: 8-6-2
-Baltimore: 21.3
-Baltimore: 8-8-1
-Pittsburgh: 37.72
-Pittsburgh: 8-6-2
-Seattle: 59.12
-Seattle: 9-5-3
-LA_Rams: 107.55
-LA_Rams: 9-8-1
-Washington: 110.59
-Washington: 9-7-0
-Houston: 115.23
-Houston: 7-9-1
-Miami: 128.54
-Miami: 8-8-0
-Indianapolis: 184.25
-Indianapolis: 9-8-1
-Chicago: 295.39
-Chicago: 12-5-0
-Kansas City: 313.2
-Kansas City: 10-7-1
-LA_Chargers: 350.78
-LA_Chargers: 9-8-1
-New Orleans: 476.69
-New Orleans: 10-8-0
-Philadelphia: 494.55
-Philadelphia: 9-8-1
-Buffalo: 521.82
-Buffalo: 6-9-1
-Tennessee: 525.52
-Tennessee: 7-8-1
-Dallas: 811.48
-Dallas: 9-8-1
+San Francisco:
+Moneyline: -714.33
+ATS:
+	Home: 2-6-0	Away: 3-5-0
+
+Green Bay:
+Moneyline: -669.91
+ATS:
+	Home: 3-4-1	Away: 4-4-0
+
+Jacksonville:
+Moneyline: -600.58
+ATS:
+	Home: 2-4-2	Away: 3-4-1
+
+NY_Jets:
+Moneyline: -553.02
+ATS:
+	Home: 3-5-0	Away: 2-5-1
+
+Cincinnati:
+Moneyline: -503.13
+ATS:
+	Home: 6-2-0	Away: 3-5-0
+
+Arizona:
+Moneyline: -476.0
+ATS:
+	Home: 4-3-1	Away: 3-5-0
+
+Atlanta:
+Moneyline: -472.72
+ATS:
+	Home: 2-6-0	Away: 3-5-0
+
+Oakland:
+Moneyline: -431.37
+ATS:
+	Home: 2-6-0	Away: 4-4-0
+
+NY_Giants:
+Moneyline: -427.67
+ATS:
+	Home: 7-1-0	Away: 1-6-1
+
+Denver:
+Moneyline: -317.48
+ATS:
+	Home: 4-4-0	Away: 2-4-2
+
+Tampa Bay:
+Moneyline: -289.01
+ATS:
+	Home: 3-3-2	Away: 4-4-0
+
+Minnesota:
+Moneyline: -256.14
+ATS:
+	Home: 4-4-0	Away: 4-3-1
+
+Carolina:
+Moneyline: -81.41
+ATS:
+	Home: 2-6-0	Away: 5-2-1
+
+New England:
+Moneyline: -76.37
+ATS:
+	Home: 4-5-0	Away: 6-3-0
+
+Detroit:
+Moneyline: -49.67
+ATS:
+	Home: 6-2-0	Away: 3-5-0
+
+Cleveland:
+Moneyline: -41.46
+ATS:
+	Home: 4-3-1	Away: 4-3-1
+
+Baltimore:
+Moneyline: 21.3
+ATS:
+	Home: 5-2-1	Away: 3-6-0
+
+Pittsburgh:
+Moneyline: 37.72
+ATS:
+	Home: 4-3-1	Away: 4-3-1
+
+Seattle:
+Moneyline: 59.12
+ATS:
+	Home: 4-3-2	Away: 5-2-1
+
+LA_Rams:
+Moneyline: 107.55
+ATS:
+	Home: 5-4-0	Away: 4-4-1
+
+Washington:
+Moneyline: 110.59
+ATS:
+	Home: 5-3-0	Away: 4-4-0
+
+Houston:
+Moneyline: 115.23
+ATS:
+	Home: 3-4-1	Away: 4-5-0
+
+Miami:
+Moneyline: 128.54
+ATS:
+	Home: 2-6-0	Away: 6-2-0
+
+Indianapolis:
+Moneyline: 184.25
+ATS:
+	Home: 6-4-0	Away: 3-4-1
+
+Chicago:
+Moneyline: 295.39
+ATS:
+	Home: 5-3-0	Away: 7-2-0
+
+Kansas City:
+Moneyline: 313.2
+ATS:
+	Home: 5-2-1	Away: 5-5-0
+
+LA_Chargers:
+Moneyline: 350.78
+ATS:
+	Home: 7-2-1	Away: 2-6-0
+
+New Orleans:
+Moneyline: 476.69
+ATS:
+	Home: 6-2-0	Away: 4-6-0
+
+Philadelphia:
+Moneyline: 494.55
+ATS:
+	Home: 6-3-1	Away: 3-5-0
+
+Buffalo:
+Moneyline: 521.82
+ATS:
+	Home: 4-4-0	Away: 2-5-1
+
+Tennessee:
+Moneyline: 525.52
+ATS:
+	Home: 4-4-0	Away: 3-4-1
+
+Dallas:
+Moneyline: 811.48
+ATS:
+	Home: 4-5-0	Away: 5-3-1
+

@@ -32,29 +32,29 @@ def spread_result(team1, team1_score, team2, team2_score, team1_spread, team2_sp
         except KeyError:
             # exc_type, exc_obj, exc_tb = sys.exc_info()
             # print(exc_type, exc_tb.tb_lineno)
-            spread_teams_dict[team1] = [0, 0, 1]
+            spread_teams_dict[team1] = [0, 0, 1, 0, 0, 0]
         try:
-            spread_teams_dict[team2][2] += 1
+            spread_teams_dict[team2][5] += 1
         except KeyError:
-            spread_teams_dict[team2] = [0, 0, 1]
+            spread_teams_dict[team2] = [0, 0, 0, 0, 0, 1]
     elif (team1_spread<0 and team1_score-team2_score<((-1.0)*team1_spread)) or (team2_spread<0 and team1_score-team2_score<team2_spread):
         try:
             spread_teams_dict[team1][1] += 1
         except KeyError:
-            spread_teams_dict[team1] = [0, 1, 0]
+            spread_teams_dict[team1] = [0, 1, 0, 0, 0, 0]
         try:
-            spread_teams_dict[team2][0] += 1
+            spread_teams_dict[team2][3] += 1
         except KeyError:
-            spread_teams_dict[team2] = [1, 0, 0]
+            spread_teams_dict[team2] = [0, 0, 0, 1, 0, 0]
     else:
         try:
-            spread_teams_dict[team2][1] += 1
+            spread_teams_dict[team2][4] += 1
         except KeyError:
-            spread_teams_dict[team2] = [0, 1, 0]
+            spread_teams_dict[team2] = [0, 0, 0, 0, 1, 0]
         try:
             spread_teams_dict[team1][0] += 1
         except KeyError:
-            spread_teams_dict[team1] = [1, 0, 0]
+            spread_teams_dict[team1] = [1, 0, 0, 0, 0, 0]
 
 
 def calc_team_odds_and_ats():
@@ -95,6 +95,7 @@ if __name__ == "__main__":
     teams_dict = calc_team_odds_and_ats()
     for team in teams_dict:
         teams_dict[team] = round(teams_dict[team], 2)
-        f.write(str(team) + ': ' + str(teams_dict[team]) + '\n')
-        f.write(str(team) + ': ' + str(spread_teams_dict[team][0]) + '-' + str(spread_teams_dict[team][1]) + '-' + str(spread_teams_dict[team][2]) + '\n')
+        f.write(str(team) + ':\n' + 'Moneyline: ' + str(teams_dict[team]) + '\n' + 'ATS:\n' +
+                '\tHome: ' + str(spread_teams_dict[team][0]) + '-' + str(spread_teams_dict[team][1]) + '-' + str(spread_teams_dict[team][2]) +
+                '\tAway: ' + str(spread_teams_dict[team][3]) + '-' + str(spread_teams_dict[team][4]) + '-' + str(spread_teams_dict[team][5]) +'\n\n')
 
