@@ -1,0 +1,64 @@
+San Francisco: -714.33
+San Francisco: 5-11-0
+Green Bay: -669.91
+Green Bay: 7-8-1
+Jacksonville: -600.58
+Jacksonville: 5-8-3
+NY_Jets: -553.02
+NY_Jets: 5-10-1
+Cincinnati: -503.13
+Cincinnati: 9-7-0
+Arizona: -476.0
+Arizona: 7-8-1
+Atlanta: -472.72
+Atlanta: 5-11-0
+Oakland: -431.37
+Oakland: 6-10-0
+NY_Giants: -427.67
+NY_Giants: 8-7-1
+Denver: -317.48
+Denver: 6-8-2
+Tampa Bay: -289.01
+Tampa Bay: 7-7-2
+Minnesota: -256.14
+Minnesota: 8-7-1
+Carolina: -81.41
+Carolina: 7-8-1
+New England: -76.37
+New England: 10-8-0
+Detroit: -49.67
+Detroit: 9-7-0
+Cleveland: -41.46
+Cleveland: 8-6-2
+Baltimore: 21.3
+Baltimore: 8-8-1
+Pittsburgh: 37.72
+Pittsburgh: 8-6-2
+Seattle: 59.12
+Seattle: 9-5-3
+LA_Rams: 107.55
+LA_Rams: 9-8-1
+Washington: 110.59
+Washington: 9-7-0
+Houston: 115.23
+Houston: 7-9-1
+Miami: 128.54
+Miami: 8-8-0
+Indianapolis: 184.25
+Indianapolis: 9-8-1
+Chicago: 295.39
+Chicago: 12-5-0
+Kansas City: 313.2
+Kansas City: 10-7-1
+LA_Chargers: 350.78
+LA_Chargers: 9-8-1
+New Orleans: 476.69
+New Orleans: 10-8-0
+Philadelphia: 494.55
+Philadelphia: 9-8-1
+Buffalo: 521.82
+Buffalo: 6-9-1
+Tennessee: 525.52
+Tennessee: 7-8-1
+Dallas: 811.48
+Dallas: 9-8-1

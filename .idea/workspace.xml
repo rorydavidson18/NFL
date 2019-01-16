@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34aedddd-b782-4a11-a347-ea8ce653c248" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/nfl_money_lines/nfl_money_lines.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/nfl_money_lines/nfl_money_lines.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfl_money_lines/nfl_money_lines_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/nfl_money_lines/nfl_money_lines_calc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nfl_money_lines/nfl_money_lines.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nfl_money_lines/nfl_money_lines_calc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nfl_money_lines/~$nfl_money_lines.xlsx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,6 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/nfl$nfl_odds_analytics.coverage" NAME="nfl_odds_analytics Coverage Results" MODIFIED="1547597184675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nfl_odds_analysis" />
     <SUITE FILE_PATH="coverage/nfl$nfl_money_lines_calc.coverage" NAME="nfl_money_lines_calc Coverage Results" MODIFIED="1547251870135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nfl_money_lines" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -21,29 +24,30 @@
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="py" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="Python" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="141" />
-          <entry key="py" value="2013" />
+          <entry key="py" value="2219" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2154" />
+          <entry key="Python" value="2360" />
         </counts>
       </usages-collector>
     </session>
@@ -51,14 +55,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nfl_money_lines/nfl_money_lines_calc.py">
+        <entry file="file://$PROJECT_DIR$/nfl_odds_analysis/nfl_odds_analytics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="88" column="144" selection-start-line="88" selection-start-column="144" selection-end-line="88" selection-end-column="144" />
+            <state relative-caret-position="205">
+              <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-                <marker date="1547251867823" expanded="true" signature="345:350" ph="..." />
-                <marker date="1547251867823" expanded="true" signature="717:1673" ph="..." />
               </folding>
             </state>
           </provider>
@@ -73,6 +75,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>KeyError</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Exception as e</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -80,6 +90,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/nfl_money_lines/nfl_money_lines_calc.py" />
+        <option value="$PROJECT_DIR$/nfl_odds_analysis/nfl_odds_analytics.py" />
       </list>
     </option>
   </component>
@@ -127,7 +138,7 @@
             <path>
               <item name="nfl" type="b2602c69:ProjectViewProjectNode" />
               <item name="nfl" type="462c0819:PsiDirectoryNode" />
-              <item name="nfl_money_lines" type="462c0819:PsiDirectoryNode" />
+              <item name="nfl_odds_analysis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -151,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.nfl_odds_analytics">
     <configuration name="nfl_money_lines_calc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="nfl" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,8 +185,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="nfl_odds_analytics" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nfl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nfl_odds_analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nfl_odds_analysis/nfl_odds_analytics.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.nfl_money_lines_calc" />
+      <item itemvalue="Python.nfl_odds_analytics" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.nfl_odds_analytics" />
         <item itemvalue="Python.nfl_money_lines_calc" />
       </list>
     </recent_temporary>
@@ -197,7 +235,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -226,15 +264,35 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/nfl_odds_analysis/nfl_odds_analytics.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/nfl_odds_analysis/nfl_odds_analytics.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/nfl_odds_analysis/nfl_odds_analytics.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nfl_money_lines/nfl_money_lines_calc.py">
+    <entry file="file://$PROJECT_DIR$/nfl_money_lines/nfl_money_lines_calc.py" />
+    <entry file="file://$PROJECT_DIR$/nfl_odds_analysis/nfl_odds_analytics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="88" column="144" selection-start-line="88" selection-start-column="144" selection-end-line="88" selection-end-column="144" />
+        <state relative-caret-position="205">
+          <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1547251867823" expanded="true" signature="345:350" ph="..." />
-            <marker date="1547251867823" expanded="true" signature="717:1673" ph="..." />
           </folding>
         </state>
       </provider>
