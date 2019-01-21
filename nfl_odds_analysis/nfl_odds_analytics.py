@@ -30,11 +30,11 @@ def spread_result(team1, team1_score, team2, team2_score, team1_spread, team2_sp
     try:
         spread_teams_dict[team1]
     except KeyError:
-        spread_teams_dict[team1] = [[0, 0, 0], [0, 0, 0], [0, 0 ,0], [0, 0, 0]]
+        spread_teams_dict[team1] = [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]
     try:
         spread_teams_dict[team2]
     except KeyError:
-        spread_teams_dict[team2] = [[0, 0, 0], [0, 0, 0], [0, 0 ,0], [0, 0, 0]]
+        spread_teams_dict[team2] = [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]
     if team1_spread<0:
         team1_is_favorite = True
     if team1_score-team2_score==team1_spread or team1_score-team2_score==team2_spread:
